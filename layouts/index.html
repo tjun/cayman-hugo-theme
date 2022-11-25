@@ -1,5 +1,4 @@
 {{ define "main" }}
-<h1>{{ .Title }}</h1>
 <ul>
   {{ $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
   {{ range $pages.ByPublishDate.Reverse }}
