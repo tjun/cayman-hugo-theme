@@ -16,6 +16,9 @@
       {{ delimit $tags ", " }}
     </div>
   {{ end }}
-  {{ .Content }}
-  {{ partial "disqus.html" . }}
+  {{ delimit $tags ", " }}
+  </div>
+  {{ end }}
+{{ .Content }}
+
 {{ end }}
